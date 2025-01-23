@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary: #FDF2E9;
+  --secondary: #f7d4c3;
+  --cta: #fe7531;
+  --cta-hover: #f58953;
+  --accent: #bf9482;
+  --accent-2: #c2754e;
+  --text: #333333;
+  --textLight: #797979;
+}
+
+@layer base {
+  body {
+    @apply font-sans tracking-widest overflow-x-hidden bg-primary text-textColor;
+  }
+
+  h1 {
+    @apply text-[28px] md:text-[45px] lg:text-[56px]
+            leading-[59px] md:leading-[66px] lg:leading-[70px]
+            tracking-[-0.03em] font-bold uppercase;
+  }
+
+  .subheading {
+    @apply text-[16px] md:text-[18px] lg:text-[20px]
+            leading-[1.7em]
+            tracking-[0em] md:tracking-[0.09em];
+  }
+
+  h2 {
+    @apply text-lg md:text-[32px] lg:text-[40px]
+            leading-[43px] md:leading-[46px] lg:leading-[60px]
+             lowercase text-center font-semibold mt-xs md:mt-md mb-xxs;
+  }
+
+  h3 {
+    @apply text-[15px] md:text-[19px] lg:text-[24px]
+            leading-[44px]
+            font-semibold lowercase;
+  }
+
+  h4 {
+    @apply uppercase text-lg lg:text-2xl font-bold mb-2;
+  }
+}
