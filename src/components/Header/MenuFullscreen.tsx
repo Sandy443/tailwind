@@ -3,6 +3,7 @@ import { Transition } from "@headlessui/react";
 import { IoMdClose } from "react-icons/io";
 import { FaBars } from "react-icons/fa";
 import { headerNav } from "../../config/navigation";
+import { Link } from "react-router-dom";
 
 export interface MenuItem {
   id: string;
@@ -26,7 +27,7 @@ const MenuFullscreen: React.FC<MenuFullscreenProps> = ({
   const renderMenuItems = () =>
     headerNav.map((item) => (
       <li key={item.id} className="my-sm px-4 hover:text-accent">
-        <a href={item.url}>{item.name}</a>
+        <Link to={item.url}>{item.name}</Link>
       </li>
     ));
 
