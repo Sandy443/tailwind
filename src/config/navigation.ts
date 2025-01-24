@@ -16,7 +16,6 @@ const navigation: Record<NavKey, NavItem> = {
 
 export const footerNav: NavItem[] = [
     navigation.privacy,
-    navigation.contact,
     navigation.photography,
 ];
 
@@ -24,5 +23,4 @@ export const headerNav: NavItem[] = [
     navigation.home,
     navigation.photography,
     navigation.projects,
-    navigation.contact,
 ];

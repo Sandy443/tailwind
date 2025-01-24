@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 import { headerNav } from "../../config/navigation";
 
 export interface MenuItem {
-  id: string; // Ensure you have a unique identifier
+  id: string;
   label: string;
   href: string;
 }

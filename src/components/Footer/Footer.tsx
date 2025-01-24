@@ -4,7 +4,7 @@ import { footerNav } from '../../config/navigation';
 import Menu from '../Menu';
 
 const Footer = React.forwardRef<HTMLDivElement>((props, ref) => (
-  <footer ref={ref} className="bg-secondary pt-2"> {/* Attach ref here */}
+  <footer {...props} ref={ref} className="bg-secondary pt-2">
     <div className="mx-auto w-full max-w-screen-xl p-4">
       <div className="md:flex md:justify-between">
         <div className="w-full max-w-screen-xl mx-auto">
